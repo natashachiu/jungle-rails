@@ -14,7 +14,7 @@
         <tbody>
           <tr>
             <td>
-              <%= link_to "Products", admin_products_path, class: "alert-link" %>
+              <%= link_to "Products", [:admin, :products], class: "alert-link" %>
             </td>
             <td>
               <p><%= @product_count %></p>
@@ -22,7 +22,7 @@
           </tr>
           <tr>
             <td>
-              <%= link_to "Categories", admin_categories_path, class: "alert-link" %>
+              <%= link_to "Categories", [:admin, :categories], class: "alert-link" %>
             </td>
             <td>
               <p><%= @category_count %></p>
