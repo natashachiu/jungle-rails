@@ -13,7 +13,7 @@ describe('home page', () => {
     cy.get(".products article").should("be.visible");
   });
 
-  it("should render 2 products oh home", () => {
+  it("should render 2 products on home page", () => {
     cy.get(".products article").should("have.length", 2);
   });
 
