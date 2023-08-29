@@ -17,6 +17,13 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 
 If Rails is complaining about authentication to the database, uncomment the user and password fields from `config/database.yml` in the development and test sections, and replace if necessary the user and password `development` to an existing database user.
 
+## Screenshots
+- !["Screenshot of home page"](https://github.com/natashachiu/jungle-rails/blob/master/screenshots/home.png?raw=true)
+- !["Screenshot of products on home page](https://github.com/natashachiu/jungle-rails/blob/master/screenshots/products.png?raw=true)
+- !["Screenshot of cart"](https://github.com/natashachiu/jungle-rails/blob/master/screenshots/cart.png?raw=true)
+- !["Screenshot of admin dashboard"](https://github.com/natashachiu/jungle-rails/blob/master/screenshots/admin_dashboard.png?raw=true")
+- !["Screenshot of admin products"](https://github.com/natashachiu/jungle-rails/blob/master/screenshots/admin_products.png?raw=true)
+
 ## Stripe Testing
 
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
