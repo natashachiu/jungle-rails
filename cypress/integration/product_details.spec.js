@@ -25,7 +25,7 @@ describe('product details page', () => {
       },
     });
     cy.get(".products article").first().click();
-    cy.url().should("include", "/products/3");
+    cy.url().should("include", "/products/2");
 
   });
 
