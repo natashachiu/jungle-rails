@@ -1,12 +1,7 @@
 describe('add to cart', () => {
 
   it('should render home page', () => {
-    cy.visit('/', {
-      auth: {
-        username: 'Jungle',
-        password: 'book'
-      },
-    });
+    cy.visit('/');
   });
 
   it('should render products on home page', () => {
@@ -18,12 +13,7 @@ describe('add to cart', () => {
   });
 
   it("should increase cart by one after add to cart is clicked", () => {
-    cy.visit('/', {
-      auth: {
-        username: 'Jungle',
-        password: 'book'
-      },
-    });
+    cy.visit('/');
     cy.contains('My Cart (0)');
     cy.contains("Add").first().click({ force: true });
     cy.contains('My Cart (1)');

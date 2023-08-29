@@ -1,12 +1,7 @@
 describe('home page', () => {
 
   it('should render home page', () => {
-    cy.visit('/', {
-      auth: {
-        username: 'Jungle',
-        password: 'book'
-      },
-    });
+    cy.visit('/');
   });
 
   it('should render products on home page', () => {

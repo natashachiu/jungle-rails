@@ -2,10 +2,6 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
 
-  username = ENV['HTTP_AUTH_USERNAME']
-  password = ENV['HTTP_AUTH_PASSWORD']
-  http_basic_authenticate_with name: username, password: password
-
   protect_from_forgery with: :exception
 
   private

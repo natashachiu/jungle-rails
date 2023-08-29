@@ -1,12 +1,7 @@
 describe('product details page', () => {
 
   it('should render home page', () => {
-    cy.visit('/', {
-      auth: {
-        username: 'Jungle',
-        password: 'book'
-      },
-    });
+    cy.visit('/');
   });
 
   it('should render products on home page', () => {
@@ -18,12 +13,7 @@ describe('product details page', () => {
   });
 
   it('should render product details page when clicked', () => {
-    cy.visit('/', {
-      auth: {
-        username: 'Jungle',
-        password: 'book'
-      },
-    });
+    cy.visit('/');
     cy.get(".products article").first().click();
     cy.url().should("include", "/products/2");
 
